@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <link href="/assets/css/all.css" rel="stylesheet">
+    <title>New Tab</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="navClose" class="fa-sharp fa-solid fa-xmark"></a>
+        <a id="youtube" href="http://www.youtube.com">
+            <img src="assets/solid/youtube.svg"></img>
+        </a>
+        <a id="calendar" href="https://calendar.google.com/calendar/u/0/r?pli=1">
+            <img src="assets/solid/googlecalendar.svg"></img>
+        </a>
+        <a id="gmail" href="http://outlook.office365.com/mail/inbox/">
+            <img src="assets/solid/outlook.svg"></img>
+        </a>
+        <a id="outlook" href="http://www.gmail.com">
+            <img src="assets/solid/gmail.svg"></img>
+        </a>
+    </div>
+
+    <span id="navOpen" class="fa-sharp fa-solid fa-bars"></span>
+    <div id="timeSearch">
+        <div class="tDisplay" id="time">00:00 AM</div>
+        <div class="container">        
+            <div id ="search-bar" class="search-bar">
+                <button name="mic" class="fa-sharp fa-solid fa-microphone"></button>
+                <form method="GET" action="http://www.google.com/search" target="_self">
+                    <input class="search-bar" name="q" type="text" placeholder="Search Google">
+                    <button class="fa-solid fa-magnifying-glass"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="calendarID" class="calendar">
+        <div class="calHead"></div>
+        <div id="blocker" class="wrap">
+            <ul class="time_table">
+                <li class="time start-800">8:00
+                <li class="time start-900">9:00
+                <li class="time start-1000">10:00
+                <li class="time start-1100">11:00
+                <li class="time start-1200">12:00
+                <li class="time start-1300">13:00
+                <li class="time start-1400">14:00
+                <li class="time start-1500">15:00
+                <li class="time start-1600">16:00
+                <li class="time start-1700">17:00
+                <li class="time start-1800">18:00
+                <li class="time start-1900">19:00
+                <li class="time start-2000">20:00
+                <li class="time start-2100">21:00
+                <li class="time start-2200">22:00
+                <li class="time start-2300">23:00
+            </ul>
+        </div>
+        <div id="events" class="event-container"></div>
+        <div id="popup" class="popClass">
+
+            <input id="eventInput" class="eventName" type="text" placeholder="Event Name">
+            <span class="underline"></span>
+            <div class="fromTo" id="eventTime">
+                <div class="beginning">
+                    <input id="beginTime" class="beginbtn">
+                    <span class="beginunderline"></span>
+                    <div id="beginDrop" class="begin">
+                        <button class="t" value="800">8:00 AM</button>
+                        <button class="t" value="830">8:30 AM</button>
+                        <button class="t" value="900">9:00 AM</button>
+                        <button class="t" value="930">9:30 AM</button>
+                        <button class="t" value="1000">10:00 AM</button>
+                        <button class="t" value="1030">10:30 AM</button>
+                        <button class="t" value="1100">11:00 AM</button>
+                        <button class="t" value="1130">11:30 AM</button>
+                        <button class="t" value="1200">12:00 PM</button>
+                        <button class="t" value="1230">12:30 PM</button>
+                        <button class="t" value="1300">1:00 PM</button>
+                        <button class="t" value="1330">1:30 PM</button>
+                        <button class="t" value="1400">2:00 PM</button>
+                        <button class="t" value="1430">2:30 PM</button>
+                        <button class="t" value="1500">3:00 PM</button>
+                        <button class="t" value="1530">3:30 PM</button>
+                        <button class="t" value="1600">4:00 PM</button>
+                        <button class="t" value="1630">4:30 PM</button>
+                        <button class="t" value="1700">5:00 PM</button>
+                        <button class="t" value="1730">5:30 PM</button>
+                        <button class="t" value="1800">6:00 PM</button>
+                        <button class="t" value="1830">6:30 PM</button>
+                        <button class="t" value="1900">7:00 PM</button>
+                        <button class="t" value="1930">7:30 PM</button>
+                        <button class="t" value="2000">8:00 PM</button>
+                        <button class="t" value="2030">8:30 PM</button>
+                        <button class="t" value="2100">9:00 PM</button>
+                        <button class="t" value="2130">9:30 PM</button>
+                        <button class="t" value="2200">10:00 PM</button>
+                        <button class="t" value="2230">10:30 PM</button>
+                        <button class="t" value="2300">11:00 PM</button>
+                    </div>
+                </div>
+
+                <div class="endclass">
+                    <input id="endTime" class="endbtn">
+                    <div id="endDrop" class="end">
+                        <button class="t2" value="800">8:00 AM</button>
+                        <button class="t2" value="830">8:30 AM</button>
+                        <button class="t2" value="900">9:00 AM</button>
+                        <button class="t2" value="930">9:30 AM</button>
+                        <button class="t2" value="1000">10:00 AM</button>
+                        <button class="t2" value="1030">10:30 AM</button>
+                        <button class="t2" value="1100">11:00 AM</button>
+                        <button class="t2" value="1130">11:30 AM</button>
+                        <button class="t2" value="1200">12:00 PM</button>
+                        <button class="t2" value="1230">12:30 PM</button>
+                        <button class="t2" value="1300">1:00 PM</button>
+                        <button class="t2" value="1330">1:30 PM</button>
+                        <button class="t2" value="1400">2:00 PM</button>
+                        <button class="t2" value="1430">2:30 PM</button>
+                        <button class="t2" value="1500">3:00 PM</button>
+                        <button class="t2" value="1530">3:30 PM</button>
+                        <button class="t2" value="1600">4:00 PM</button>
+                        <button class="t2" value="1630">4:30 PM</button>
+                        <button class="t2" value="1700">5:00 PM</button>
+                        <button class="t2" value="1730">5:30 PM</button>
+                        <button class="t2" value="1800">6:00 PM</button>
+                        <button class="t2" value="1830">6:30 PM</button>
+                        <button class="t2" value="1900">7:00 PM</button>
+                        <button class="t2" value="1930">7:30 PM</button>
+                        <button class="t2" value="2000">8:00 PM</button>
+                        <button class="t2" value="2030">8:30 PM</button>
+                        <button class="t2" value="2100">9:00 PM</button>
+                        <button class="t2" value="2130">9:30 PM</button>
+                        <button class="t2" value="2200">10:00 PM</button>
+                        <button class="t2" value="2230">10:30 PM</button>
+                        <button class="t2" value="2300">11:00 PM</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button id="cButton" class="colorbtn">Colors</button>
+                <div id="colorsDrop" class="colors">
+                    <button class="clr" id="red" value="#ff6969">Red</button>
+                    <button class="clr" id="orange" value="#ff9e69">Orange</button>
+                    <button class="clr" id="yellow" value="#ffee96">Yellow</button>
+                    <button class="clr" id="green" value="#a9ff96">Green</button>
+                    <button class="clr" id="blue" value="#96f8ff">Blue</button>
+                    <button class="clr" id="purple" value="#b496ff">Purple</button>
+                    <button class="clr" id="gray" value="#b5b5b5">Gray</button>
+                </div>
+            </div>
+    
+            <button id="closebtn" class="close">Create</button>
+    
+        </div>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

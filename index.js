@@ -54,8 +54,8 @@
     function showPopUp() {
         var popup = document.getElementById("popup");
         popup.style.display = "flex";
-        
     }
+    document.getElementById("popClose").addEventListener("click",delPopUp);
     function delPopUp(){
         document.getElementById("popup").style.display = "none";
     }
